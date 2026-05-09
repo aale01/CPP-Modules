@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/08 16:44:17 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/08 18:48:01 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/09 15:54:03 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void Contact::_setDarkestSecret( void )
 void Contact::displayRowContact(int index) const
 {
 	std::cout << "|" ;
-	std::cout << std::setw(10) << index;
+	std::cout << std::setw(10) << index + 1;
 	std::cout << "|" ;
 	std::cout << std::setw(10) << Contact::formatField(this->_firstName);
 	std::cout << "|" ;

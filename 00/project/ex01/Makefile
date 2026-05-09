@@ -18,7 +18,7 @@ MAKEFLAGS += -s
 
 SRCS =	main.cpp		\
 		PhoneBook.cpp	\
-		Contancr.cpp	\
+		Contact.cpp		\
 
 OBJDIR = obj
 OBJS = $(SRCS:%.cpp=$(OBJDIR)/%.o)
