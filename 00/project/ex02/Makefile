@@ -1,4 +1,4 @@
-NAME = dreamjob
+NAME = program
 
 
 
