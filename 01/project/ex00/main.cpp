@@ -12,7 +12,7 @@
 
 #include "Zombie.hpp"
 
-int main()
+int main( void )
 {
 	Zombie* a = newZombie("HeapZombie");
 	a->announce();

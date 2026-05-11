@@ -12,7 +12,7 @@
 
 #include "Zombie.hpp"
 
-int main()
+int main( void )
 {
 	Zombie* horde = zombieHorde(10, "HeapZombie");
 
