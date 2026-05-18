@@ -28,7 +28,7 @@ class Fixed {
 
 	private:
 		int					_value;
-		static const int	_precision;
+		static const int	_precision = 8;
 };
 
 #endif // FIXED_H
