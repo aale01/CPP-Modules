@@ -12,18 +12,28 @@
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap( void ) :	_name(""),
+								_hitPoints(0),
+								_energyPoints(0),
+								_attackDamage(0)
+{
+	std::cout << "ClapTrap default constructor called" << std::endl;
+
+	return ;
+}
+
 ClapTrap::ClapTrap( std::string name ) : _name(name),
 										_hitPoints(10),
 										_energyPoints(10),
 										_attackDamage(0)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "ClapTrap constructor called" << std::endl;
 	return;
 }
 
 ClapTrap::ClapTrap( ClapTrap const & src )
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "ClapTrap copy constructor called" << std::endl;
 	*this = src;
 
 	return;
@@ -31,14 +41,14 @@ ClapTrap::ClapTrap( ClapTrap const & src )
 
 ClapTrap::~ClapTrap( void )
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ClapTrap destructor called" << std::endl;
 
 	return;
 }
 
 ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )
 {
-	std::cout << "Assignment operator called" << std::endl;
+	std::cout << "ClapTrap assignment operator called" << std::endl;
 
 	if ( this != &rhs )
 	{
