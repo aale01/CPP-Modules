@@ -6,21 +6,15 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 00:14:22 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 00:44:26 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:00:55 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap( void ) :	_name(""),
-								_hitPoints(0),
-								_energyPoints(0),
-								_attackDamage(0)
-{
-	std::cout << "ClapTrap default constructor called" << std::endl;
-
-	return ;
-}
+/* -------------------------------------------------------------------------- */
+/*                          Constructors & operators                          */
+/* -------------------------------------------------------------------------- */
 
 ClapTrap::ClapTrap( std::string name ) : _name(name),
 										_hitPoints(10),
@@ -62,24 +56,57 @@ ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )
 	return *this;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                               Getter & setter                              */
+/* -------------------------------------------------------------------------- */
+
+const std::string& ClapTrap::getName() const
+{
+	return _name;
+}
+
+unsigned int ClapTrap::getHitPoints() const
+{
+	return _hitPoints;
+}
+
+unsigned int ClapTrap::getEnergyPoints() const
+{
+	return _energyPoints;
+}
+
+unsigned int ClapTrap::getAttackDamage() const
+{
+	return _attackDamage;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Member functions                              */
+/* -------------------------------------------------------------------------- */
+
 void ClapTrap::attack( const std::string & target )
 {
-	if ( this->_energyPoints < 1 || this->_hitPoints < 1 )
-		return;
+	if (!this->isFunctional()) {
+		std::cout << "ClapTrap " << this->_name << " can't attack."
+		<< std::endl;
+		return ;
+	}
 
 	std::cout << "ClapTrap " << this->_name << " attacks " << target
 			<< ", causing " << this->_attackDamage << " points of damage!" <<
 			std::endl;
 
-	this->_energyPoints--;
+	addEnergyPoints(-1);
+
+	return ;
 }
 
 void ClapTrap::takeDamage( unsigned int amount )
 {
 	if ( amount > this->_hitPoints )
-		amount = this->_hitPoints ;
+		amount = this->_hitPoints;
 
-	this->_hitPoints -= amount;
+	addHitPoints(-static_cast<int>(amount));
 
 	std::cout << "ClapTrap " << this->_name << " takes " << amount
 	<< " points of damage!" << std::endl;
@@ -89,14 +116,35 @@ void ClapTrap::takeDamage( unsigned int amount )
 
 void ClapTrap::beRepaired( unsigned int amount )
 {
-	if ( this->_energyPoints < 1 || this->_hitPoints < 1 )
+	if (!this->isFunctional()) {
+		std::cout << "ClapTrap " << this->_name << " can't be repaired."
+		<< std::endl;
 		return ;
+	}
 
-	this->_hitPoints += amount;
-	this->_energyPoints--;
+	addHitPoints(amount);
+	addEnergyPoints(-1);
 
 	std::cout << "ClapTrap " << this->_name << " is repaired by " << amount
 	<< " points of energy!" << std::endl;
 
 	return ;
+}
+
+bool ClapTrap::isFunctional( void ) const
+{
+	if (this->_energyPoints > 0 && this->_hitPoints > 0)
+		return true ;
+
+	return false ;
+}
+
+void ClapTrap::addEnergyPoints( int amount )
+{
+	this->_energyPoints += amount;
+}
+
+void ClapTrap::addHitPoints( int amount )
+{
+	this->_hitPoints += amount;
 }
