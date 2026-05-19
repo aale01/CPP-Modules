@@ -16,6 +16,13 @@
 /*                          Constructors & operators                          */
 /* -------------------------------------------------------------------------- */
 
+ClapTrap::ClapTrap( void )
+{
+	std::cout << "ClapTrap default constructor called" << std::endl;
+
+	return;
+}
+
 ClapTrap::ClapTrap( std::string name ) : _name(name),
 										_hitPoints(10),
 										_energyPoints(10),

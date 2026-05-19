@@ -17,6 +17,7 @@
 
 class ClapTrap {
 	public:
+		ClapTrap( void );
 		explicit ClapTrap( std::string name );
 		ClapTrap( ClapTrap const & src );
 		~ClapTrap( void );

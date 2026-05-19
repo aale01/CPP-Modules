@@ -13,7 +13,7 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
-int main()
+int main( void )
 {
 	std::cout << "===== CLAPTRAP TEST =====" << std::endl;
 

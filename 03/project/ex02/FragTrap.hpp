@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 04:49:26 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 05:41:15 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:54:50 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class FragTrap : public ClapTrap {
 	public:
+		FragTrap( void );
 		explicit FragTrap( std::string name );
 		FragTrap( FragTrap const & src );
 		~FragTrap( void );

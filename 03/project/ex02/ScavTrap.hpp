@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 04:48:53 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 05:57:31 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:53:43 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class ScavTrap : public ClapTrap {
 	public:
+		ScavTrap( void );
 		explicit ScavTrap( std::string name );
 		ScavTrap( ScavTrap const & src );
 		~ScavTrap( void );

@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 04:48:53 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 06:18:38 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:51:20 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 /* -------------------------------------------------------------------------- */
 /*                          Constructors & operators                          */
 /* -------------------------------------------------------------------------- */
+
+ClapTrap::ClapTrap( void )
+{
+	std::cout << "ClapTrap default constructor called" << std::endl;
+
+	return;
+}
 
 ClapTrap::ClapTrap( std::string name ) : _name(name),
 										_hitPoints(10),

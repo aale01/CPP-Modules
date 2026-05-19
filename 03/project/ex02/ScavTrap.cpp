@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 04:48:53 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 06:19:14 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:53:37 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 /* -------------------------------------------------------------------------- */
 /*                          Constructors & operators                          */
 /* -------------------------------------------------------------------------- */
+
+ScavTrap::ScavTrap( void ) : ClapTrap()
+{
+	std::cout << "ScavTrap default constructor called" << std::endl;
+
+	return;
+}
 
 ScavTrap::ScavTrap( std::string name ) : ClapTrap(name)
 {

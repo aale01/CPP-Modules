@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 04:48:53 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/19 06:18:43 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/19 06:51:10 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class ClapTrap {
     public:
+		ClapTrap( void );
         explicit ClapTrap( std::string name );
         ClapTrap( ClapTrap const & src );
         ~ClapTrap( void );
