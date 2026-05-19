@@ -1,0 +1,68 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/19 04:08:21 by abecucci          #+#    #+#             */
+/*   Updated: 2026/05/19 04:46:54 by abecucci         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap( void ) : ClapTrap()
+{
+	std::cout << "ScavTrap default constructor called" << std::endl;
+
+	return ;
+}
+
+ScavTrap::ScavTrap( std::string name ) : ClapTrap(name)
+{
+	std::cout << "ScavTrap constructor called" << std::endl;
+
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
+
+	return;
+}
+
+ScavTrap::ScavTrap( ScavTrap const & src ) : ClapTrap(src)
+{
+	std::cout << "ScavTrap copy constructor called" << std::endl;
+	*this = src;
+
+	return;
+}
+
+ScavTrap::~ScavTrap( void )
+{
+	std::cout << "ScavTrap destructor called" << std::endl;
+
+	return;
+}
+
+void ScavTrap::attack( const std::string & target )
+{
+	if ( this->_energyPoints < 1 || this->_hitPoints < 1 )
+		return;
+
+	std::cout << "ScavTrap " << this->_name << " attacks " << target
+			<< ", causing " << this->_attackDamage << " points of damage!" <<
+			std::endl;
+
+	this->_energyPoints--;
+
+	return ;
+}
+
+void ScavTrap::guardGate( void )
+{
+	std::cout << "ScavTrap " << this->_name << " is now in Gate keeper mode!"
+	<< std::endl;
+
+	return ;
+}
