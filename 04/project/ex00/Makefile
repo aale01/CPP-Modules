@@ -10,7 +10,7 @@ CANCEL = \033[1A\033[K
 
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g -gdwarf-4
+CXXFLAGS = -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++98 -g -gdwarf-4
 
 MAKEFLAGS += -s
 
