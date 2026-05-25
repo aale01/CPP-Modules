@@ -12,7 +12,6 @@
 
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "WrongCat.hpp"
 
 #define NB_ANIMALS 10
 
