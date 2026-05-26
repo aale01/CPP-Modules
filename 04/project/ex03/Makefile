@@ -22,6 +22,7 @@ SRCS =	main.cpp			\
 		Cure.cpp			\
 		Character.cpp		\
 		MateriaSource.cpp	\
+		Floor.cpp			\
 
 OBJDIR = obj
 OBJS = $(SRCS:%.cpp=$(OBJDIR)/%.o)

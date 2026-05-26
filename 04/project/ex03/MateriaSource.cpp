@@ -6,11 +6,12 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 22:25:17 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/25 23:55:32 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/26 14:57:43 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
+#include "Floor.hpp"
 
 /* -------------------------------------------------------------------------- */
 /*                          Constructors & operators                          */
@@ -73,10 +74,13 @@ MateriaSource::~MateriaSource( void )
 void MateriaSource::learnMateria( AMateria* m )
 {
 	if ( this->_size < MATERIAS_MAX_SIZE )
-		this->_materias[this->_size++] = m->clone();
+		this->_materias[this->_size++] = m;
 	else
+	{
+		floorDrop(m);
 		std::cout << "MateriaSource::learnMateria() : inventory is full"
-	<< std::endl;
+		<< std::endl;
+	}
 
 	return ;
 }

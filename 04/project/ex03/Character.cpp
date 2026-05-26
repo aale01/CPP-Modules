@@ -6,11 +6,12 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 22:07:19 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/25 22:11:39 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/26 14:42:24 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+#include "Floor.hpp"
 
 /* -------------------------------------------------------------------------- */
 /*                          Constructors & operators                          */
@@ -81,9 +82,12 @@ std::string const &	Character::getName( void ) const
 void Character::equip( AMateria* m )
 {
 	if (this->_size < INVENTORY_MAX_SIZE)
-		this->_inventory[this->_size++] = m->clone();
+		this->_inventory[this->_size++] = m;
 	else
+	{
 		std::cout << "Character::equip() : inventory is full" << std::endl;
+		floorDrop(m);
+	}
 
 	return ;
 }
@@ -92,7 +96,7 @@ void Character::unequip( int idx )
 {
 	if ( idx >= 0 && idx < this->_size )
 	{
-		delete this->_inventory[idx];   SBAGLIATO --> CONTENITORE
+		floorDrop(this->_inventory[idx]);
 		idx++;
 		while (idx < this->_size)
 		{

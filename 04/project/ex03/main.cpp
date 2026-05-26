@@ -6,7 +6,7 @@
 /*   By: abecucci <abecucci@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 22:47:59 by abecucci          #+#    #+#             */
-/*   Updated: 2026/05/25 22:47:59 by abecucci         ###   ########.fr       */
+/*   Updated: 2026/05/26 14:45:50 by abecucci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # include "Cure.hpp"
 # include "Character.hpp"
 # include "MateriaSource.hpp"
+# include "Floor.hpp"
 
 int	main( void )
 {
@@ -43,7 +44,6 @@ int	main( void )
 
 	delete bob;
 	delete me;
-	delete src;
 
 	std::cout << std::endl;
 
@@ -94,8 +94,6 @@ int	main( void )
 	// non dovrebbe fare nulla
 	player.use(0, enemy);
 
-	delete floor;
-
 	std::cout << std::endl;
 
 	std::cout << "============================" << std::endl;
@@ -143,6 +141,10 @@ int	main( void )
 	std::cout << "============================" << std::endl;
 	std::cout << "END OF TESTS" << std::endl;
 	std::cout << "============================" << std::endl;
+
+	delete src;
+
+	floorClear();
 
 	return (0);
 }
