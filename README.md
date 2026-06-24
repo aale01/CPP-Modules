@@ -214,20 +214,20 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 1. Clone this repository:
 
     ```bash
-    git clone github.com/snowhp/CPP-Modules
+    git clone github.com/aale01/CPP-Modules
     ```
 
 2. Navigate to the desired module/exercise directory:
 
     ```bash
-    cd 00/ex00
+    cd 00/project/ex00
     ```
 
 3. Compile and run your program:
 
     ```bash
     make
-    ./PROGRAM_EXECUTABLE_NAME (Depends on the exercise most are default [a.out] or the number of the exercise [ex00])
+    ./PROGRAM_EXECUTABLE_NAME (Depends on the exercise, most are default [program])
     ```
 
 Feel free to send questions or improvements for module exercises.
