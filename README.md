@@ -7,9 +7,9 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 00 - Namespace, class, member functions, stdio stream, initialization lists, static</summary>
 
-- [ex00 - String manipulation and command-line argument handling](./00/project/ex00/)
-- [ex01 - Classes, Object instantiation, Basic I/O, String manipulation](./00/project/ex01/)
-- [ex02 - File recreation, C++ programming, Object-oriented design](./00/project/ex02/)
+- [ex00 - String manipulation and command-line argument handling](./00/ex00/)
+- [ex01 - Classes, Object instantiation, Basic I/O, String manipulation](./00/ex01/)
+- [ex02 - File recreation, C++ programming, Object-oriented design](./00/ex02/)
 
 **Resources:**
 - **OOP in CPP:** [GeeksforGeeks](https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/)
@@ -26,13 +26,13 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 01 - Memory allocation, References, Pointers to members, File streams</summary>
 
-- [ex00 - Classes, Member Functions, Pointers, Memory Allocation (stack vs. heap), Destructors](./01/project/ex00/)
-- [ex01 - Arrays of Objects, Memory Allocation (array of objects), Object Initialization](./01/project/ex01/)
-- [ex02 - Pointers, References, Memory Addresses](./01/project/ex02/)
-- [ex03 - Composition, Aggregation, Object Relationships, Constructors, Setters](./01/project/ex03/)
-- [ex04 - File I/O, Content copy to new file, Error Handling](./01/project/ex04/)
-- [ex05 - Member Functions, Pointers to Member Functions, Enumeration, Logging](./01/project/ex05/)
-- [ex06 - Switch Statement, Filtering, Logging](./01/project/ex06/)
+- [ex00 - Classes, Member Functions, Pointers, Memory Allocation (stack vs. heap), Destructors](./01/ex00/)
+- [ex01 - Arrays of Objects, Memory Allocation (array of objects), Object Initialization](./01/ex01/)
+- [ex02 - Pointers, References, Memory Addresses](./01/ex02/)
+- [ex03 - Composition, Aggregation, Object Relationships, Constructors, Setters](./01/ex03/)
+- [ex04 - File I/O, Content copy to new file, Error Handling](./01/ex04/)
+- [ex05 - Member Functions, Pointers to Member Functions, Enumeration, Logging](./01/ex05/)
+- [ex06 - Switch Statement, Filtering, Logging](./01/ex06/)
 
   ### Resources
 - **References in CPP:** [GeeksforGeeks](https://www.geeksforgeeks.org/references-in-c/)
@@ -45,10 +45,10 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 02 - Ad-hoc polymorphism, operators overload, and canonical classes</summary>
 
-- [ex00 - Fixed-point numbers, Orthodox Canonical Form](./02/project/ex00/)
-- [ex01 - Constructors (from int and float), Member Functions (toFloat, toInt), Operator Overloading](./02/project/ex01/)
-- [ex02 - Operator Overloading (Comparison, Arithmetic, Increment/Decrement), Static Member Functions (min, max)](./02/project/ex02/)
-- [ex03 - Binary Space Partitioning (BSP), Fixed-point arithmetic, Triangle Point Inclusion Test](./02/project/ex03/)
+- [ex00 - Fixed-point numbers, Orthodox Canonical Form](./02/ex00/)
+- [ex01 - Constructors (from int and float), Member Functions (toFloat, toInt), Operator Overloading](./02/ex01/)
+- [ex02 - Operator Overloading (Comparison, Arithmetic, Increment/Decrement), Static Member Functions (min, max)](./02/ex02/)
+- [ex03 - Binary Space Partitioning (BSP), Fixed-point arithmetic, Triangle Point Inclusion Test](./02/ex03/)
 
   ### Resources
 - **Introduction to Fixed Point Number Representation:** [CS61c Spring 2006](https://inst.eecs.berkeley.edu//~cs61c/sp06/handout/fixedpt.html)
@@ -70,10 +70,10 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 03 - Inheritance</summary>
 
-- [ex00 - Class implementation](./03/project/ex00/)
-- [ex01 - Inheritance, Constructors/Destructors Chaining, Overriding Member Functions](./03/project/ex01/)
-- [ex02 - Inheritance, Constructors/Destructors Chaining, Overriding Member Functions](./03/project/ex02/)
-- [ex03 - Diamond Problem, Multiple Inheritance, Constructors/Destructors Chaining, Accessing Attributes and Member Functions from Parent Classes](./03/project/ex03/)
+- [ex00 - Class implementation](./03/ex00/)
+- [ex01 - Inheritance, Constructors/Destructors Chaining, Overriding Member Functions](./03/ex01/)
+- [ex02 - Inheritance, Constructors/Destructors Chaining, Overriding Member Functions](./03/ex02/)
+- [ex03 - Diamond Problem, Multiple Inheritance, Constructors/Destructors Chaining, Accessing Attributes and Member Functions from Parent Classes](./03/ex03/)
 
 ### Resources
 - **Inheritance And Polymorphism:** [YouTube](https://www.youtube.com/watch?v=wrkkAOMp3Sw)
@@ -87,10 +87,10 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 04 - Subtype polymorphism, abstract classes, interfaces</summary>
 
-- [ex00 - Polymorphism, Inheritance, Virtual Functions](./04/project/ex00/)
-- [ex01 - Memory Management, Deep Copy](./04/project/ex01/)
-- [ex02 - Abstract Classes](./04/project/ex02/)
-- [ex03 - Interfaces / Pure Abstract Classes](./04/project/ex03/)
+- [ex00 - Polymorphism, Inheritance, Virtual Functions](./04/ex00/)
+- [ex01 - Memory Management, Deep Copy](./04/ex01/)
+- [ex02 - Abstract Classes](./04/ex02/)
+- [ex03 - Interfaces / Pure Abstract Classes](./04/ex03/)
 
 ### Resources
 - **Polymorphism in C++ | Compile time vs Run time Polymorphism:** [YouTube](https://www.youtube.com/watch?v=uc_Hr10cBBE)
@@ -112,10 +112,10 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 05 - Try/Catch and Exceptions</summary>
 
-- [ex00 - Exception handling, class design](./05/project/ex00/)
-- [ex01 - Exception handling, class design, member functions](./05/project/ex01/)
-- [ex02 - Abstract classes, inheritance, polymorphism, execution logic](./05/project/ex02/)
-- [ex03 - Factory method, class design, string manipulation](./05/project/ex03/)
+- [ex00 - Exception handling, class design](./05/ex00/)
+- [ex01 - Exception handling, class design, member functions](./05/ex01/)
+- [ex02 - Abstract classes, inheritance, polymorphism, execution logic](./05/ex02/)
+- [ex03 - Factory method, class design, string manipulation](./05/ex03/)
 
 ### Resources
 - **Exception Handling - C++ Tutorial For Beginners** [NeuralNine](https://www.youtube.com/watch?v=5MI2N8yLdMI)
@@ -135,9 +135,9 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 06 - C++ casts</summary>
 
-- [ex00 - type conversion, static_cast](./06/project/ex00/)
-- [ex01 - reinterpret_cast](./06/project/ex01/)
-- [ex02 - dynamic_cast](./06/project/ex02/)
+- [ex00 - type conversion, static_cast](./06/ex00/)
+- [ex01 - reinterpret_cast](./06/ex01/)
+- [ex02 - dynamic_cast](./06/ex02/)
 
 ### Resources
 - **Type Conversion in C++** [scaler](https://www.scaler.com/topics/cpp/type-conversion-in-cpp/)
@@ -158,9 +158,9 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 07 - C++ templates</summary>
 
-- [ex00 - template functions, swap, min, max](./07/project/ex00/)
-- [ex01 - iterate with template](./07/project/ex01/)
-- [ex02 - template class](./07/project/ex02/)
+- [ex00 - template functions, swap, min, max](./07/ex00/)
+- [ex01 - iterate with template](./07/ex01/)
+- [ex02 - template class](./07/ex02/)
 
 ### Resources
 - **C++ Function Template** [programiz](https://www.programiz.com/cpp-programming/function-template)
@@ -174,9 +174,9 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 08 - Templated containers, iterators, algorithms</summary>
 
-- [ex00 - Function templates, container manipulation, exception handling](./08/project/ex00/)
-- [ex01 - std::max, std::min, std::sort exceptions, iterators](./08/project/ex01/)
-- [ex02 - Iterators, template specialization](./08/project/ex02/)
+- [ex00 - Function templates, container manipulation, exception handling](./08/ex00/)
+- [ex01 - std::max, std::min, std::sort exceptions, iterators](./08/ex01/)
+- [ex02 - Iterators, template specialization](./08/ex02/)
 
 ### Resources
 - **Back To Basics: C++ Containers** [javidx9](https://www.youtube.com/watch?v=6OoSgY6NVVk&ab_channel=javidx9)
@@ -193,9 +193,9 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 <details>
 <summary>Module 09 - STL</summary>
 
-- [ex00 - File manipulation, std::map, time parsing](./09/project/ex00/)
-- [ex01 - Reverse Polish Notation, std::stack, input parsing](./09/project/ex01/)
-- [ex02 - Merge sort algorithm, std::vector, std::deque, input parsing](./09/project/ex02/)
+- [ex00 - File manipulation, std::map, time parsing](./09/ex00/)
+- [ex01 - Reverse Polish Notation, std::stack, input parsing](./09/ex01/)
+- [ex02 - Merge sort algorithm, std::vector, std::deque, input parsing](./09/ex02/)
 
 ### Resources
 - **Substring in C++** [geeksforgeeks](https://www.geeksforgeeks.org/substring-in-cpp/)
@@ -220,7 +220,7 @@ This repository contains the C++ (CPP) modules completed as part of the curricul
 2. Navigate to the desired module/exercise directory:
 
     ```bash
-    cd 00/project/ex00
+    cd 00/ex00
     ```
 
 3. Compile and run your program:
